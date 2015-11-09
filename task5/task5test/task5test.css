@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.pageone {
+    position: absolute;
+    width: 100px;
+    height: 500px;
+    background-color: orange;
+}
+#tm:checked ~ .pagetwo {
+    transform: translate(60px,30px);
+    -webkit-transform: translate(60px,30px);
+    background-color: #29bde0;
+}
+.pagetwo {
+    background-color: #f0f0f0;
+    width: 300px;
+    height: 500px;
+    position: relative;
+    transition: all 0.25s;
+}
+.pagetwo label {
+    color: white;
+    border: 2px solid white;
+    display: block;
+    padding: 10px 0;
+    width: 60%;
+    position: absolute;
+    cursor: pointer;
+    text-transform: uppercase;
+}

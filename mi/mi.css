@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0 auto;
+    font:  14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+/*******顶部黑块开始***********/
+.toptab {
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+}
+.container {
+    width: 1226px;
+    margin: 0 auto;
+    line-height: 40px;
+    color: #b0b0b0;
+    font-size: 12px;
+}
+.container a:hover {
+    color: #fff;
+}
+.container .textspan {
+    color: #424242;
+    margin: 0 .58em;
+}
+.texttopleft {
+    float: left;
+}
+.texttopright {
+    float: right;
+}
+.textlogin {
+    display: inline-block;
+}
+.textcar {
+    width: 120px;
+    text-align: center;
+    background-color: #424242;
+    margin-left: 17px;
+    display: inline-block;
+}
+/*******顶部黑块结束***********/
+
+/*******导航栏开始**********/
+.header {
+    width: 1226px;
+    height: 100px;
+    margin: 0 auto;
+}
+.miimg {
+    position: absolute;
+    display: inline-block;
+    margin-top: 22px;
+}
+.menu {
+    display: inline-block;
+    margin-left: 232px;
+    margin-top: 38px;
+    font-size: 16px;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu ul li {
+    display: inline;
+    margin: 0 16px;
+}
+
+.menu ul a:hover {
+    color: #ff6700;
+}
+.serch {
+    display: inline-block;
+    width: 294px;
+    height: 48px;
+    float: right;
+    border: 1px solid #e1e1e1;
+    margin-top: 25px;
+}
+/*******导航栏结束*********/
+
+/********轮播图及单品白背景开始********/
+.picmenu {
+    width: 1226px;
+    height: 1108px;
+    margin: 0 auto;
+}
+.classpics {
+    height: 460px;
+    background-color: #29bde1;
+}
+.fourpics {
+    height: 170px;
+    margin-top: 15px;
+}
+.fourone {
+    display: inline-block;
+    width: 234px;
+    height: 100%;
+    background-color: #5f5750;
+}
+.fourone ul {
+    margin-top: 48px;
+    list-style-type: none;
+}
+.fourone ul li {
+    text-align: center;
+    width: 77px;
+    height: 85px;
+    overflow: auto;
+    color: rgba(255,255,255,.7);
+    float: left;
+-webkit-transition: color 0.4s;
+         transition: color 0.4s;
+}
+.fourone :hover {
+    color: #fff;
+}
+.fourtwo {
+    display: inline-block;
+    width: 316px;
+    height: 100%;
+    margin-left: 10px;
+    background-color: #ccc;
+}
+.starshop {
+    height: 438px;
+    margin-top: 26px;
+}
+.startext {
+    height: 58px;
+    line-height: 58px;
+}
+.startextleft {
+    font-size: 22px;
+    color: #333;
+    float: left;
+}
+.startextright {
+    width: 70px;
+    height: 25px;
+    border: 1px solid #e1e1e1;
+    float: right;
+    margin-top: 20px;
+}
+.starpics {
+    height: 380px;
+}
+.starpics1 {
+    width: 234px;
+    height: 340px;
+    margin-right: 8px;
+    display: inline-block;
+    border-top: 1px solid #ffac13;
+    background-color: #fafafa;
+    text-align: center;
+}
+.starpics2 {
+    width: 234px;
+    height: 340px;
+    margin-right: 8px;
+    display: inline-block;
+    border-top: 1px solid #83c44e;
+    background-color: #fafafa;
+    text-align: center;
+}
+.starpics3 {
+    width: 234px;
+    height: 340px;
+    margin-right: 8px;
+    display: inline-block;
+    border-top: 1px solid #2196f3;
+    background-color: #fafafa;
+    text-align: center;
+}
+.starpics4 {
+    width: 234px;
+    height: 340px;
+    margin-right: 8px;
+    display: inline-block;
+    border-top: 1px solid #e53935;
+    background-color: #fafafa;
+    text-align: center;
+}
+.starpics5 {
+    width: 234px;
+    height: 340px;
+    margin-right: 8px;
+    display: inline-block;
+    border-top: 1px solid #00c0a5;
+    background-color: #fafafa;
+    text-align: center;
+}
+.starshopimg {
+    width: 160px;
+    height: 166px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #eee;
+}
+.starshopname {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 20px 0 5px 0;
+}
+.starshoppoint {
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.starshopprice {
+    color: #ff6700;
+    margin-top: 30px;
+}
+/********轮播图及单品白背景结束********/

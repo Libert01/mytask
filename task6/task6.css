@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.contant {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: #29bde0;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+.header {
+    padding: 1em 0;
+    color: #fff;
+    text-align: center;
+}
+.headerleft {
+    float: left;
+    margin-left: 1em;
+}
+.headerright {
+    float: right;
+    margin-right: 1em;
+    transition: all 2s;
+   -webkit-transition: all 2s;
+}
+.headerright:hover {
+    transform: rotate(1080deg);
+    -webkit-transform: rotate(1080deg);
+}
+.header p {
+    font-size: 2em;
+    font-weight: 100;
+    display: inline;
+}
+.music {
+    padding: 1.5em 0;
+    clear: both;
+    background-color: rgba(255,255,255,.7);
+}
+.textover {
+    display: inline;
+    color: #464646;
+    margin-left: -2em;
+    font-size: 1.5em;
+}
+.musicbtn {
+    float: right;
+    cursor: pointer;
+    margin-right: 1em;
+    margin-top: -.5em;
+}
+.musicbtn:active audio {
+    opacity: 1;
+}
+.musicbtn:hover audio {
+    opacity: 1;
+}
+audio {
+    position: absolute;
+    margin-top: -2.5em;
+    margin-left: -19em;
+    opacity: 0;
+}
+.triangle {
+    float: left;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 14px solid rgba(255,255,255,.7);
+    margin: 3.45em 0 0 5em;
+}
+.mudel {
+    clear: both;
+}
+.textmax {
+    color: #fff;
+    font-size: 1.3em;
+    margin: 1em 0 .8em 3.8em;
+}
+.person {
+    float: left;
+    margin: 1em 1em .5em 3em;
+}
+.person:hover .list {
+    opacity: 1;
+}
+.boxes {
+    cursor: pointer;
+    background-color: #f5c97b;
+    border: 5px solid #fff;
+    text-align: center;
+}
+.list {
+    opacity: 0;
+}
+.profession {
+    color: #565656;
+    font-size: 1.7em;
+    margin: 25% 0;
+}
+.number {
+    color: #fff;
+    font-size: 1.3em;
+    background-color: rgba(26,153,183,.5);
+}
+.list ul {
+    list-style-type: none;
+    margin-top: .5em;
+}
+.list ul li {
+    display: inline;
+    cursor: pointer;
+    transition: all 1.5s;
+}
+li :hover {
+    opacity: .3;
+}
+.clear {
+    clear: both;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    margin-left: 3.09%;
+    background-color: #29bde0;
+    border-top: 2px solid #fff;
+}
+.footbtn {
+    color: #fff;
+    font-size: 2em;
+    padding: .5em 6.1em;
+    background-color: #fbb435;
+    margin: .8em 1.22em;
+    transition: all 1s;
+}
+.footbtn:hover {
+    background-color: #f70;
+    box-shadow: 1px 3px 1px rgba(0,0,0,.2)
+}

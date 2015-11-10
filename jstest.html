@@ -1,152 +1,40 @@
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/slider.js"></script>
-<script type="text/javascript">
-    $(function() {
-        var bannerSlider = new Slider($('#banner_tabs'), {
-            time: 5000,
-            delay: 400,
-            event: 'hover',
-            auto: true,
-            mode: 'fade',
-            controller: $('#bannerCtrl'),
-            activeControllerCls: 'active'
-        });
-        $('#banner_tabs .flex-prev').click(function() {
-            bannerSlider.prev()
-        });
-        $('#banner_tabs .flex-next').click(function() {
-            bannerSlider.next()
-        });
-    })
-</script>
-<style>
-    .flexslider {
-        margin: 0 auto;
-        position: relative;
-        width: 100%;
-        height: 600px;
-        overflow: hidden;
-        zoom: 1;
-    }
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset="utf-8″ />
+    <title>纯css制作面包屑，兼容IE6</title>
+    <style type="text/css">
+        *{margin:0;padding:0;list-style-type:none;}
+        a,img{border:0;}
+        body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+        /* demo */
+        .demo{position:relative;}
+        .demo ul{height:32px;
+            overflow:hidden;}
+        .demo li{float:left;
+            width:200px;
+            text-align:center;
+            position:relative;
+            z-index:2;
+            font-weight:bold;
+            font-size:14px;
+            line-height:32px;}
+        .demo li em{position:absolute;right:-24px;top:-8px;width:0;height:0;line-height:0;border-width:24px 0 24px 24px;
+            border-color:transparent transparent transparent #fff;border-style:dashed dashed dashed solid;}
 
-    .flexslider .slides li {
-        width: 100%;
-        height: 100%;
-    }
-
-    .flex-direction-nav a {
-        width: 70px;
-        height: 70px;
-        line-height: 99em;
-        overflow: hidden;
-        margin: -35px 80px 0;
-        display: block;
-        background: url(images/ad_ctr.png) no-repeat;
-        position: absolute;
-        top: 50%;
-        z-index: 10;
-        cursor: pointer;
-        opacity: 0;
-        filter: alpha(opacity=0);
-        -webkit-transition: all .3s ease;
-        border-radius: 35px;
-    }
-
-    .flex-direction-nav .flex-next {
-        background-position: 0 -70px;
-        right: 0;
-    }
-
-    .flex-direction-nav .flex-prev {
-        left: 0;
-    }
-
-    .flexslider:hover .flex-next {
-        opacity: 0.8;
-        filter: alpha(opacity=25);
-    }
-
-    .flexslider:hover .flex-prev {
-        opacity: 0.8;
-        filter: alpha(opacity=25);
-    }
-
-    .flexslider:hover .flex-next:hover,
-    .flexslider:hover .flex-prev:hover {
-        opacity: 1;
-        filter: alpha(opacity=50);
-    }
-
-    .flex-control-nav {
-        width: 100%;
-        position: absolute;
-        bottom: 10px;
-        text-align: center;
-    }
-
-    .flex-control-nav li {
-        margin: 0 2px;
-        display: inline-block;
-        zoom: 1;
-        *display: inline;
-    }
-
-    .flex-control-paging li a {
-        background: url(images/dot.png) no-repeat 0 -16px;
-        display: block;
-        height: 16px;
-        overflow: hidden;
-        text-indent: -99em;
-        width: 16px;
-        cursor: pointer;
-    }
-
-    .flex-control-paging li a.flex-active,
-    .flex-control-paging li.active a {
-        background-position: 0 0;
-    }
-
-    .flexslider .slides a img {
-        width: 100%;
-        height: 600px;
-        display: block;
-    }
-</style>
-
-
-
-
-<div id="banner_tabs" class="flexslider">
-    <ul class="slides">
-        <li>
-            <a title="" target="_blank" href="#">
-                <img width=1920px height=600px alt="" style="background: url(images/banner-1.jpg) no-repeat center;" src="images/alpha.png">
-            </a>
-        </li>
-        <li>
-            <a title="" href="#">
-                <img width=1920px height=600px alt="" style="background: url(images/banner-2.jpg) no-repeat center;" src="images/alpha.png">
-            </a>
-        </li>
-        <li>
-            <a title="" href="#">
-                <img width=1920px height=600px alt="" style="background: url(images/banner-3.jpg) no-repeat center;" src="images/alpha.png">
-            </a>
-        </li>
-        <li>
-            <a title="" href="#">
-                <img width=1920px height=600px alt="" style="background: url(images/banner-4.jpg) no-repeat center;" src="images/alpha.png">
-            </a>
-        </li>
+        .demo li i{position:absolute;right:-16px;top:0;width:0;height:0;line-height:0;border-width:16px 0 16px 16px;
+            border-color:transparent transparent transparent #f0f0f0;border-style:dashed dashed dashed solid;}
+        .demo li.current{background:#f60;color:#fff;z-index:1;}
+        .demo li.current i{border-color:transparent transparent transparent #f60;}
+    </style>
+</head>
+<body>
+<div class="demo">
+    <ul class="clearfix">
+        <li>面包屑一<em></em><i></i></li>
+        <li class="current">面包屑二<em></em><i></i></li>
+        <li>面包屑二<em></em><i></i></li>
     </ul>
-    <ul class="flex-direction-nav">
-        <li><a class="flex-prev" href="javascript:">Previous</a></li>
-        <li><a class="flex-next" href="javascript:">Next</a></li>
-    </ul>
-    <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
-        <li><a>1</a></li>
-        <li><a>2</a></li>
-        <li><a>2</a></li>
-        <li><a>2</a></li>
-    </ol>
 </div>
+</body>
+</html>

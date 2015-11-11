@@ -107,6 +107,10 @@ a:link,a:visited,a:hover, a:active {
     margin: 18px 10px;
     color: #333;
 }
+.aspect a:hover {
+    text-decoration: underline;
+}
+
 .front {
     clear: both;
     height: 80px;

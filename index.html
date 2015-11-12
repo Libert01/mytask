@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>deersir首页正在装修中...</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="shortcut icon" href="images/deer_32.ico" type="image/x-icon" />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        a:link,a:visited,a:hover,a:active {
+            text-decoration: none;
+            color: inherit;
+        }
+        body {
+            font-size: 0;
+            font-weight: 100;
+            font-family: "Microsoft Yahei","Hiragino Sans GB",sans-serif;
+            background-color: #f0f0f0;
+            background-image: url(images/1.jpg);
+            background-attachment:fixed;
+        }
+        .menu {
+            width: 20%;
+        }
+        .left {
+            width: 260px;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            color: #fff;
+            text-align: center;
+            background-color: #343846;
+            overflow: hidden;
+            box-shadow: 1px 1px 3px rgba(40,50,60,.2);
+        }
+        .left img {
+            margin-top: 30px;
+        }
+        .name {
+            font-size: 48px;
+            text-shadow: 1px 1px 3px rgba(20,0,20,.8);
+        }
+        .number {
+            font-size: 12px;
+            margin-bottom: 50px;
+        }
+        .link {
+            display: block;
+            font-size: 16px;
+            line-height: 60px;
+            height: 60px;
+        }
+        .mytask {
+            display: block;
+            font-size: 16px;
+            line-height: 60px;
+            height: 60px;
+            background-color: #ea2e49;
+        }
+        .link:hover {
+            background-color: #ea2e49;
+        }
+        .right {
+            position: relative;
+            width: 100px;
+            left: 160px;
+            height: 1000px;
+            background-color: rgba(40,40,60,.5);
+            overflow: hidden;
+            padding-top: 30px;
+            transition: all .5s;
+            opacity: 0;
+            filter:alpha(opacity=0);
+        }
+        .task {
+            font-size: 16px;
+            padding-left: 20px;
+            line-height: 32px;
+            color: #fff;
+        }
+        .task_no {
+            font-size: 20px;
+            padding-left: 20px;
+            color: #333;
+            line-height: 32px;
+        }
+        .task:hover,.task:active {
+            background-color: #ea2e49;
+            text-decoration: underline;
+        }
+        .task_no:hover {
+            background-color: #ea2e49;
+        }
+        .menu:hover .right {
+            transform: translateX(100px);
+            -ms-transform: translateX(100px);
+            -webkit-transform: translateX(100px);
+            -moz-transform: translateX(100px);
+            -o-transform: translateX(100px);
+            opacity: 1;
+            filter:alpha(opacity=100);
+        }
+        .wrap {
+            width: 79%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .wrap_box {
+            float: left;
+            margin: 50px;
+            width: 20%;
+            border-radius: 4px;
+            box-shadow: 1px 1px 2px rgba(0,0,0,.2);
+        }
+        .wrap_top {
+            background-color: #666;
+            color: #fff;
+            font-size: 48px;
+            padding: 35%;;
+        }
+        .wrap_bottom {
+            background-color: #fff;
+            padding-bottom: 10px;;
+        }
+        .text_one {
+            font-size: 24px;
+            color: #ea2e49;
+            line-height: 48px;
+            margin-left: 10px;
+            display: inline;
+        }
+        .text_two {
+            font-size: 16px;
+            color: #999;
+            display: inline;
+            float: right;
+            margin-right: 10px;
+            margin-top: 14px;;
+        }
+        .text_three {
+            font-size: 24px;
+            color: #343846;
+            margin-left: 10px;
+        }
+        .mask {
+            width: 20%;
+            padding: 9.9% 0;
+            position: absolute;
+            background-color: rgba(52,56,70,0);
+            transition: all .5s;
+            text-align: center;
+        }
+        .mask:hover {
+            background-color: rgba(52,56,70,.7);
+        }
+        .mask_text {
+            width: 80px;
+            height: 80px;
+            font-size: 16px;
+            color: #fff;
+            background-color: rgba(0,0,0,0);
+            border: 1px dotted #fff;
+            border-radius: 40px;
+            text-align: center;
+            line-height: 80px;
+            margin: 0 auto;
+            transition: all .5s;
+            opacity: 0;
+            filter:alpha(opacity=0);
+        }
+        .mask:hover .mask_text {
+            opacity: 1;
+            filter:alpha(opacity=100);
+        }
+    </style>
+</head>
+<body>
+<div class="menu">
+    <div class="left">
+        <img src="images/deer_1.png" />
+        <p class="name">Deersir</p>
+        <p class="number">CSS-T4-076</p>
+        <p class="mytask"><a>Mytask</a></p>
+        <p class="link"><a>About Me</a></p>
+        <p class="link"><a>Contact</a></p>
+    </div>
+
+    <div class="right">
+        <P class="task"><a href="http://58.30.243.164:8050/task1.html" target="_blank">task1</a></P>
+        <P class="task"><a href="http://58.30.243.164:8050/task3/task3.html" target="_blank">task3</a></P>
+        <P class="task"><a href="http://58.30.243.164:8050/task4/task4.html" target="_blank">task4</a></P>
+        <P class="task"><a href="http://58.30.243.164:8050/task5/task5.html" target="_blank">task5</a></P>
+        <P class="task"><a href="http://58.30.243.164:8050/task6/task6.html" target="_blank">task6</a></P>
+        <P class="task"><a href="http://58.30.243.164:8050/task7/task7.html" target="_blank">task7</a></P>
+        <P class="task"><a href="http://58.30.243.164:8050/task8/task8.html" target="_blank">task8</a></P>
+        <P class="task"><a href="http://58.30.243.164:8050/task9/task9.html" target="_blank">task9</a></P>
+        <P class="task_no"><a>task10</a></P>
+        <P class="task_no"><a>task11</a></P>
+        <P class="task_no"><a>task12</a></P>
+        <P class="task_no"><a>task13</a></P>
+        <P class="task_no"><a>task14</a></P>
+        <P class="task_no"><a>task15</a></P>
+    </div>
+</div>
+
+<div class="wrap">
+    <div class="wrap_box">
+        <div class="mask">
+            <div class="mask_text">more+</div>
+        </div>
+        <div class="wrap_top">
+            <span>task1</span>
+        </div>
+        <div class="wrap_bottom">
+            <p class="text_one">deersir</p>
+            <p class="text_two">2015/11/10</p>
+            <p class="text_three">xhtml/css/css3</p>
+        </div>
+    </div>
+
+    <div class="wrap_box">
+        <div class="mask">
+            <div class="mask_text">more+</div>
+        </div>
+        <div class="wrap_top">
+            <span>task3</span>
+        </div>
+        <div class="wrap_bottom">
+            <p class="text_one">deersir</p>
+            <p class="text_two">2015/11/10</p>
+            <p class="text_three">xhtml/css/css3</p>
+        </div>
+    </div>
+    <div class="wrap_box">
+        <div class="mask">
+            <div class="mask_text">more+</div>
+        </div>
+        <div class="wrap_top">
+            <span>task4</span>
+        </div>
+        <div class="wrap_bottom">
+            <p class="text_one">deersir</p>
+            <p class="text_two">2015/11/10</p>
+            <p class="text_three">xhtml/css/css3</p>
+        </div>
+    </div>
+    <div class="wrap_box">
+        <div class="mask">
+            <div class="mask_text">more+</div>
+        </div>
+        <div class="wrap_top">
+            <span>task5</span>
+        </div>
+        <div class="wrap_bottom">
+            <p class="text_one">deersir</p>
+            <p class="text_two">2015/11/10</p>
+            <p class="text_three">xhtml/css/css3</p>
+        </div>
+    </div>
+    <div class="wrap_box">
+        <div class="mask">
+            <div class="mask_text">more+</div>
+        </div>
+        <div class="wrap_top">
+            <span>task6</span>
+        </div>
+        <div class="wrap_bottom">
+            <p class="text_one">deersir</p>
+            <p class="text_two">2015/11/10</p>
+            <p class="text_three">xhtml/css/css3</p>
+        </div>
+    </div>
+    <div class="wrap_box">
+        <div class="mask">
+            <div class="mask_text">more+</div>
+        </div>
+        <div class="wrap_top">
+            <span>task7</span>
+        </div>
+        <div class="wrap_bottom">
+            <p class="text_one">deersir</p>
+            <p class="text_two">2015/11/10</p>
+            <p class="text_three">xhtml/css/css3</p>
+        </div>
+    </div>
+    <div class="wrap_box">
+        <div class="mask">
+            <div class="mask_text">more+</div>
+        </div>
+        <div class="wrap_top">
+            <span>task8</span>
+        </div>
+        <div class="wrap_bottom">
+            <p class="text_one">deersir</p>
+            <p class="text_two">2015/11/10</p>
+            <p class="text_three">xhtml/css/css3</p>
+        </div>
+    </div>
+    <div class="wrap_box">
+        <div class="mask">
+            <div class="mask_text">more+</div>
+        </div>
+        <div class="wrap_top">
+            <span>task9</span>
+        </div>
+        <div class="wrap_bottom">
+            <p class="text_one">deersir</p>
+            <p class="text_two">2015/11/10</p>
+            <p class="text_three">xhtml/css/css3</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

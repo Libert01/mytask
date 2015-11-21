@@ -1,0 +1,254 @@
+body{
+    background-color: #f0f5f8;
+    color: #040404;
+    font-family: "Microsoft YaHei",sans-serif;
+}
+.top_pic {
+    width: 100%;
+    text-align: center;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+.clear {
+    clear: both;
+}
+/*
+*内容开始
+*/
+.wrap {
+    width: 1010px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+/**运营基础知识*****/
+.jichubox {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.jichu_title {
+    color: #7c3e33;
+    font-size: 32px;
+    line-height: 60px;
+    text-align: center;
+    background-image: url(images/淘宝运营_03.jpg);
+    margin-bottom: 40px;
+}
+.jichu_left {
+    float: left;
+    width: 280px;
+    font-size: 14px;
+    margin: 0 28px;
+}
+.jichu_left_blue {
+    vertical-align: middle;
+}
+.blue_yuan {
+    float: left;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    background-color: #62b9d5;
+}
+.blue_xian {
+    float: left;
+    height: 1px;
+    width: 280px;
+    position: absolute;
+    top: 50px;
+    background-color: #62b9d5;
+}
+.jichu_icon {
+    margin: 20px 0;
+}
+.word_title {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 25px;
+}
+.word_text {
+    text-align: left;
+    line-height: 24px;
+}
+.word_xiangqing {
+    color: #e44b3b;
+    line-height: 24px;
+    text-align: right;
+}
+.jichu_center {
+    float: left;
+    width: 280px;
+    font-size: 14px;
+    margin: 0 28px;
+}
+.jichu_right {
+    float: right;
+    width: 280px;
+    font-size: 14px;
+    margin: 0 28px;
+}
+.jichu_red {
+    background-color: #e44b3b;
+    color: #fff;
+    font-size: 14px;
+    text-align: left;
+    line-height: 32px;
+    padding: 40px 25px;
+    margin: 25px 28px;
+}
+
+/**运营初级篇*****/
+.chujibox {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.chuji_pic {
+    width: 280px;
+    height: auto;
+    margin: 0;
+}
+.left_title {
+    width: 280px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 48px;
+    background-image: url(images/淘宝运营_21.jpg);
+    margin: 0;
+}
+.center_title {
+    width: 280px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 48px;
+    background-image: url(images/淘宝运营_23.jpg);
+    margin: 0;
+}
+.right_title {
+    width: 280px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 48px;
+    background-image: url(images/淘宝运营_25.jpg);
+    margin: 0;
+}
+.first_text {
+    margin: 10px 5px 0 5px;
+    text-align: left;
+}
+.second_text {
+    margin: 20px 5px 0 5px;;
+    text-align: left;
+}
+
+
+/**运营中级篇*****/
+.zhongjibox {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.zhongji {
+    float: left;
+    margin: 0 10px 30px 10px;
+    width: 485px;
+    height: 180px;
+}
+.zhongji_left {
+    float: left;
+    margin-right: 15px;
+}
+.zhongji_left_title {
+    background-color: #65c0ef;
+    color: #fff;
+    font-size: 18px;
+    line-height: 38px;
+    border-radius: 3px;
+}
+.zhongji_right_title {
+    font-weight: bold;
+    text-align: left;
+    margin: 10px 0;
+}
+.zhongji_right_text {
+    text-align: left;
+    line-height: 24px;
+}
+
+/**运营高级篇*****/
+.gaojibox {
+    margin-bottom: 60px;
+    text-align: center;
+}
+.gaoji {
+    height: 720px;
+    background: url(images/淘宝运营_31.jpg) no-repeat center;
+}
+.gaoji_one {
+    float: left;
+    width: 430px;
+    height: 220px;
+    background: url(images/淘宝运营_34.jpg) no-repeat center;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.gaoji_three {
+    float: left;
+    width: 430px;
+    height: 220px;
+    background: url(images/淘宝运营_34.jpg) no-repeat center;
+    margin-top: 60px;
+    margin-left: 25px;
+}
+.gaoji_title {
+    font-size: 18px;
+    color: #fff;
+    line-height: 40px;
+}
+.gaoji_text {
+    text-align: left;
+    line-height: 24px;
+    margin: 22px 20px 0 20px;
+}
+.gaoji_two {
+    float: right;
+    width: 430px;
+    height: 220px;
+    background: url(images/淘宝运营_37.jpg) no-repeat center;
+    margin-top: 190px;
+    margin-right: 25px;
+}
+.gaoji_four {
+    float: right;
+    width: 430px;
+    height: 220px;
+    background: url(images/淘宝运营_37.jpg) no-repeat center;
+    margin-top: 70px;
+    margin-right: 25px;
+}
+
+
+
+
+/**视频详解篇*****/
+.xinagjiebox {
+    text-align: center;
+}
+.xiangjie {
+    margin: 0 15px;
+}
+.shipin {
+    float: left;
+    margin: 15px 15px;
+}
+.shipin_title {
+    background-color: #e44b3b;
+    color: #fff;
+    width: 215px;
+    text-align: center;
+    line-height: 32px;
+}
